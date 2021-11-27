@@ -1,0 +1,148 @@
+html {
+  font-family: "Roboto", "Lucida Sans", Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+ 
+.oszlop-1 {width: 25%;}
+.oszlop-2 {width: 50%;}
+.oszlop-3 {width: 75%;}
+.oszlop-4 {width: 100%;}  
+
+[class*="oszlop-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+  /*  border: 1px solid red; */
+  }
+
+  @media only screen and (min-width: 600px) {
+    .oszlop-s-1 {width: 25%;}
+    .oszlop-s-2 {width: 50%;}
+    .oszlop-s-3 {width: 75%;}
+    .oszlop-s-4 {width: 100%;}
+  }
+  
+  @media only screen and (min-width: 728px) {
+    .oszlop-1 {width: 25%;}
+    .oszlop-2 {width: 50%;} 
+    .oszlop-3 {width: 75%;}
+    .oszlop-4 {width: 100%;}
+  }
+
+.sor::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.gomb {
+    background-color: white;  
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+    transition-duration: 0.4s; 
+}  
+
+.gomb1 {
+    border: 2px solid #4CAF50;
+}
+
+.gomb2 {
+    border: 2px solid #008CBA;
+  }
+  
+.gomb3 {
+    border: 2px solid #f44336;
+  }
+  
+.gomb4 {
+    border: 2px solid yellowgreen;
+  }
+
+.gomb1:hover {
+    background-color: #4caf50;
+  }  
+
+.gomb2:hover {
+  background-color: #008CBA;
+}  
+
+.gomb3:hover {
+  background-color: #f44336;
+}  
+
+.gomb4:hover {
+  background-color: yellowgreen;
+}  
+
+.letiltott{
+  opacity: 0.6;
+  cursor: default;
+}
+
+.arckep {
+  max-width: 100%;
+  height: auto; 
+  float: left;
+  border: 1px solid black;
+  border-radius: 50%; 
+  padding: 5px;
+}
+
+div.also {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}
+
+div.felso {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}
+
+div.galeria {
+  margin: 5px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 250px;
+}
+
+div.galeria:hover {
+  border: 1px solid #444;
+}
+
+div.galeria img {
+  width: 100%;
+  height: auto;
+}
+
+div.megjegyzes {
+  padding: 15px;
+  text-align: center;
+}
+
+body{
+  background-color:  rgb(182, 253, 229); 
+}
+
+p {
+  margin: 10px;
+  color: #222;
+}  
+
+
